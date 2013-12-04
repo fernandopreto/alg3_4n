@@ -41,7 +41,7 @@ public class Heap {
 	public int retiraMin() throws Exception {
 		int minimo;
 		if (this.n < 1)
-			throw new Exception("[HEAP_ERROR] Heap estÃ¡ vazio!");
+			throw new Exception("[HEAP_ERROR] Heap está vazio!");
 		else {
 			minimo = this.fp[1];
 			this.fp[1] = this.fp[this.n];

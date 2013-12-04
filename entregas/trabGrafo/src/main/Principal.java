@@ -98,10 +98,10 @@ public class Principal {
 			}
 
 		} catch (FileNotFoundException e) {
-			System.err.println("Nao encontrou o arquivo");
+			System.err.println("Não encontrou o arquivo");
 			e.printStackTrace();
 		} catch (IOException e) {
-			throw new Exception("NÃ£o foi possível abrir o arquivo 'graphos.txt'");
+			throw new Exception("Não foi possível abrir o arquivo 'graphos.txt'");
 		} catch (Exception e) {
 			throw new Exception("Erro na estrutura do arquivo: Formato esperado de dados inválido!");
 		} finally {
