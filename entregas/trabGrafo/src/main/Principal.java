@@ -33,11 +33,11 @@ public class Principal {
 			destino = Integer.parseInt(values[1]);
 			
 			if (origem < 0) {
-				System.err.println("Valor de 'ORIGEM' invalido! Algoritmo n√£o suporta valores negativos!");
+				System.err.println("Valor de 'ORIGEM' invalido! Algoritmo n„o suporta valores negativos!");
 				System.exit(-1);
 			}
 			if (destino > totalVertices) {
-				System.err.println("Valor de 'DESTINO' invalido! O valor do v√©rtice n√£o existe na √°rvore!");
+				System.err.println("Valor de 'DESTINO' invalido! O valor do vÈrtice n√£o existe na ·rvore!");
 				System.exit(-1);
 			}
 			
@@ -45,7 +45,7 @@ public class Principal {
 			System.err.println("Erro na leitura do arquivo 'graphos.txt'");
 			System.exit(-1);
 		} catch (Exception e) {
-			System.err.println("Erro na entrada/leitura de dados! Informe 2 n√∫meros separados por um espa√ßo!");
+			System.err.println("Erro na entrada/leitura de dados! Informe 2 n˙meros separados por um espaÁo!");
 			System.exit(-1);
 		}
 		
@@ -101,9 +101,9 @@ public class Principal {
 			System.err.println("Nao encontrou o arquivo");
 			e.printStackTrace();
 		} catch (IOException e) {
-			throw new Exception("N√£o foi poss√≠vel abrir o arquivo 'graphos.txt'");
+			throw new Exception("N√£o foi possÌvel abrir o arquivo 'graphos.txt'");
 		} catch (Exception e) {
-			throw new Exception("Erro na estrutura do arquivo: Formato esperado de dados inv√°lido!");
+			throw new Exception("Erro na estrutura do arquivo: Formato esperado de dados inv·lido!");
 		} finally {
 			try {
 				br.close();
